@@ -46,6 +46,7 @@ class JuiceMaker{
     }
 }
 
+
 function addApplesAndSqueeze(juiceMaker){
     let full = false;
     while(!full){
@@ -69,5 +70,10 @@ function juiceMakerProgram(){
 
     console.log(`Total amount of juice created: ${totalAmountOfJuice.toFixed(2)} L`);
 }
+
+//Nije mi bas bilo najjasnije da li treba sokovnik da bude programiran da ubacuje i cedi sto puta ili to treba nas program da radi.
+//Ova druga varijanta mi je bila logicnija pa sam tako i uradio
+//Sto se tice premasen kapacitet exceptiona, te stvari sam hendlovao unutar samih metoda tako da mislim da nije potrebno dodatno raditi.
+//Da sam radio na taj nacin koristio bih throw new Error.
 
 juiceMakerProgram()
